@@ -20,7 +20,7 @@ def ch(): #Function to change the numbers in num[]
 	global counter
 	counter+=1000 #Counting how much time has passed (in milliseconds)
 	for j in range(row*col):
-		if counter%chTime[j]==0: #If it is a multiple of the chosen numbers changing time
+		if counter%chTime[j]==0: #If it is a multiple of the chosen number's changing time
 			num[j]=(num[j]+1)%9 #Increments that number in mod(9) since the numbers should stay in (0,9)
 	for g in range(0,col*row,col):
 		st1=st1 + ('  '.join(str(e) for e in num[g:g+col])) + '\n'
