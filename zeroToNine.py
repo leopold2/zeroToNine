@@ -11,7 +11,8 @@ num=[random.randint(0,9) for i in range(col*row)] #Creating the first set of num
 st=""
 chTime=[100*random.randint(1,10) for i in range(col*row)] #Creating the changing time of each number(i.e. chTime[0]==200 would imply that num[0] would update every 0.2 seconds)
 counter=0
-fore=["red", "blue", "green", "cyan", "yellow", "white", "purple", "orange", "magenta", "indigo"]
+fore=["red", "blue", "green", "cyan", "yellow", "white", "purple", "orange", "magenta", "indigo", "midnight blue", "navy", "maroon", "navajo white", "azure", "lawn green", "medium violet red",
+        "steel blue", "lime green", "coral", "dark orange", "spring green", "dark orchid"]
 fcolor=random.choice(fore)
 
 for k in range(0,col*row,col): #Putting all the numbers in a string so that they can be put into a label
@@ -36,3 +37,4 @@ def ch(): #Function to change the numbers in num[]
 
 root.after(100,ch)
 root.mainloop()
+
